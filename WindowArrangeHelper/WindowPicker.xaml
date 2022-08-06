@@ -4,13 +4,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
         xmlns:local="clr-namespace:WindowArrangeHelper" 
-        AllowsTransparency="True"
+        AllowsTransparency="True" Topmost="True"
         WindowStyle="None" Background="Transparent"
         mc:Ignorable="d" Cursor="None" Width="50" Height="50"
         d:DesignHeight="50" d:DesignWidth="50">
     <Window.Resources>
-        <SolidColorBrush x:Key="WindowPickerCrossBrush" Color="#FF00FF00"/>
-        <SolidColorBrush x:Key="WindowPickerPointBrush" Color="#FF007F00"/>
+        <SolidColorBrush x:Key="WindowPickerCrossBrush" Color="#9F000000"/>
+        <SolidColorBrush x:Key="WindowPickerPointBrush" Color="Red"/>
     </Window.Resources>
     <Grid>
         <Grid.ColumnDefinitions>
