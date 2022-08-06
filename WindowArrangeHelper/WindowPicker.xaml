@@ -1,0 +1,33 @@
+﻿<Window x:Class="WindowPicker"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+        xmlns:local="clr-namespace:WindowArrangeHelper" 
+        AllowsTransparency="True"
+        WindowStyle="None" Background="Transparent"
+        mc:Ignorable="d" Cursor="None" Width="50" Height="50"
+        d:DesignHeight="50" d:DesignWidth="50">
+    <Window.Resources>
+        <SolidColorBrush x:Key="WindowPickerCrossBrush" Color="#FF00FF00"/>
+        <SolidColorBrush x:Key="WindowPickerPointBrush" Color="#FF007F00"/>
+    </Window.Resources>
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="1"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="1"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Ellipse Fill="{StaticResource WindowPickerPointBrush}" Margin="-1"
+                 Grid.Column="1" Grid.Row="1"/>
+        <Rectangle Margin="0,0,10,0" Fill="{StaticResource WindowPickerCrossBrush}" Grid.Row="1" />
+        <Rectangle Margin="10,0,0,0" Fill="{StaticResource WindowPickerCrossBrush}" Grid.Row="1" Grid.Column="2" />
+        <Rectangle Margin="0,0,0,10" Fill="{StaticResource WindowPickerCrossBrush}" Grid.Column="1" />
+        <Rectangle Margin="0,10,0,0" Fill="{StaticResource WindowPickerCrossBrush}" Grid.Column="1" Grid.Row="2" />
+    </Grid>
+</Window>
